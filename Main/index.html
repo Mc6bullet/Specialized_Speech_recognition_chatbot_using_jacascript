@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--#browser-sync start --server --files "*html, css/*.css"-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specialized chatbot</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="#">Step 1. Click on the microphone button.</a>
+    <a href="#">Step 2. Give the access of microphone.</a>
+    <a href="#">Step 3. Ask a question.</a>
+    <a href="#">Step 4.  See all the conversation.</a>
+  </div>
+</div>
+    <header >
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+        <b>CHATBOT</b></header>
+        
+       
+    <section class="main">
+            <div class="user-area">
+                <img src="Images/user1.png">
+            </div>
+            <div class="chatarea-main">
+                <div class="chatarea-outer">
+                    <div class="chatarea-inner user">Hello </div>
+                    
+                    <!--<div class="chatarea-inner user">How area you, i am good. What about you!</div> -->
+                </div>
+            </div>    
+            <div class="chatbot-area">
+                <img src="Images/Robot.png">
+            </div>
+        <button id="mic"><i class="flaticon-microphone"></i></button>
+        <!--<button onclick="myFunction()" class="darkm">Toggle dark mode</button>-->
+    </section>
+    
+    
+    <script src="js/main.js"></script>
+    <script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+</body>
+</html>

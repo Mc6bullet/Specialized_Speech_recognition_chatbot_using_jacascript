@@ -71,11 +71,11 @@ function chatbotvoice(message){
         let finalresult = 'I am a user friendly chatbot as you can simply give a voice command and have me answer your question.';
         speech.text = finalresult;
     }
-    if(message.includes('which professional fields are you helpful in' || 'helpful')){
+    if(message.includes('which professional fields are you helpful in' || 'helpful' || 'which professional fields are you helpful')){
         let finalresult = 'I am use in many of professional fields, like medical, buisness, education excetra.';
         speech.text = finalresult;
     }
-    if(message.includes('why should I prefer voice based chatbots')){
+    if(message.includes('why should I prefer voice based chatbots' || 'why should I prefer for voice based chatbots')){
         let finalresult = 'I can give you personal assistance with quick response service, also voice based chatbots will give you a better interaction experience.';
         speech.text = finalresult;
     }
